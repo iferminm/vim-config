@@ -62,6 +62,8 @@ set autoindent
 set smartindent
 set number
 set t_Co=16
+set foldmethod=indent
+set foldlevel=99
 
 filetype plugin on
 filetype indent on
