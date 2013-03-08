@@ -64,6 +64,8 @@ set number
 set t_Co=16
 set foldmethod=indent
 set foldlevel=99
+set incsearch
+set hlsearch
 
 filetype plugin on
 filetype indent on
