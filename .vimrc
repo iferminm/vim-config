@@ -67,6 +67,8 @@ set foldlevel=99
 set incsearch
 set hlsearch
 
+let g:gist_clip_command = 'xclip -selection clipboard'
+
 filetype plugin on
 filetype indent on
 
