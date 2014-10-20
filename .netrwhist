@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/israelord/projects/libturpial/libturpial/lib/protocols/twitter'
+let g:netrw_dirhist_2='/home/israelord/projects/dishwars/recipes'
+let g:netrw_dirhist_3='/home/israelord/projects/libturpial/libturpial/lib/protocols/twitter'
+let g:netrw_dirhist_4='/home/israelord/projects/libturpial/libturpial/.idea'
+let g:netrw_dirhist_5='/home/israelord/Work/Blog/content/Blog'
+let g:netrw_dirhist_6='/home/israelord/projects/dishwars/recipes'
