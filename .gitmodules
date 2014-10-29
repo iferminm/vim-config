@@ -28,3 +28,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = git://github.com/ervandew/snipmate.vim.git
