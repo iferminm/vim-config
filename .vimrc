@@ -68,6 +68,7 @@ set incsearch
 set hlsearch
 
 let g:gist_clip_command = 'xclip -selection clipboard'
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 filetype plugin on
 filetype indent on
