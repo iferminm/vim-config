@@ -70,6 +70,8 @@ set hlsearch
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
+nnoremap <F5> :GundoToggle<CR>
+
 filetype plugin on
 filetype indent on
 
