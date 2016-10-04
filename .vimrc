@@ -49,7 +49,7 @@ colorscheme desert256
 
 filetype off
 
-set runtimepath+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
@@ -64,28 +64,50 @@ Plugin 'ervandew/supertab'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'mattn/webapi-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 
+" Other general set up params
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+set fileformat=unix
 set nocompatible
 set showmatch
 set ignorecase
 set showmode
-set expandtab
-set ts=4
-set sw=4
-set autoindent
-set smartindent
 set number
 set t_Co=16
-set foldmethod=indent
-set foldlevel=99
+
 set incsearch
 set hlsearch
+set splitright
+set splitbelow
+set encoding=utf-8
+
+" YouCompleteMe settings
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 nnoremap <F5> :GundoToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeClose<CR>
 
 filetype plugin on
 filetype indent on
