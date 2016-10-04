@@ -17,9 +17,7 @@ runtime! debian.vim
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
-call pathogen#infect()
 syntax on
-
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
@@ -49,7 +47,24 @@ colorscheme desert256
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 
-filetype on
+filetype off
+
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
+
+Plugin 'gmarik/vundle'
+Plugin 'mattn/emmet-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'ervandew/supertab'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'mattn/webapi-vim'
 
 set nocompatible
 set showmatch

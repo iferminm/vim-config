@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/israel/code/dubizzle/dbzextras/forms/widgets'
+let g:netrw_dirhist_2='/home/israel/code/bigluu/models'
+let g:netrw_dirhist_3='/home/israel/code/kraken/server/models'
+let g:netrw_dirhist_4='/home/israel/code/kraken/server'
