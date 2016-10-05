@@ -90,6 +90,7 @@ set encoding=utf-8
 
 " YouCompleteMe settings
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_goto_buffer_command='new-tab'
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "python with virtualenv support
