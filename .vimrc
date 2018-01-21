@@ -47,7 +47,7 @@ colorscheme desert256
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 
-filetype off
+filetype on
 
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
@@ -56,17 +56,12 @@ Plugin 'gmarik/vundle'
 Plugin 'mattn/emmet-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'sjl/gundo.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
-Plugin 'ervandew/supertab'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'itchyny/lightline.vim'
 
 " Other general set up params
 set tabstop=4
@@ -76,12 +71,12 @@ set textwidth=150
 set expandtab
 set autoindent
 set fileformat=unix
-set nocompatible
 set showmatch
 set ignorecase
-set showmode
 set number
 set t_Co=16
+set laststatus=2
+set noshowmode
 
 set incsearch
 set hlsearch
@@ -105,7 +100,6 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 
 let g:gist_clip_command = 'xclip -selection clipboard'
-let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 nnoremap <F5> :GundoToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
