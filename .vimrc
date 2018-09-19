@@ -60,7 +60,6 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 
 " Other general set up params
